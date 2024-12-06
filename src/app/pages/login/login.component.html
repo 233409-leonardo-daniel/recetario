@@ -1,0 +1,29 @@
+<main class="flex justify-center items-center min-h-screen bg-[#F5F1E3]">
+    <section class="w-1/2 bg-[#496B2F] rounded-lg shadow-xl">
+        <div class="flex flex-col gap-4 p-7">
+            <h1 class="text-[#E3DCC9] text-3xl font-bold text-center">Mi Recetario</h1>
+            <div>
+                <form [formGroup]="loginForm" class="flex flex-col gap-4" (ngSubmit)="login()">
+                    <div class="flex flex-col gap-2">
+                        <label for="email" class="text-[#E3DCC9]">Email</label>
+                        <input type="email" 
+                               id="email" 
+                               formControlName="email" 
+                               class="border-2 border-[#E3DCC9] bg-[#F5F1E3] rounded-md p-2 focus:outline-none focus:border-[#7C9B4A] transition-colors">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="password" class="text-[#E3DCC9]">Password</label>
+                        <input type="password" 
+                               id="password" 
+                               formControlName="password" 
+                               class="border-2 border-[#E3DCC9] bg-[#F5F1E3] rounded-md p-2 focus:outline-none focus:border-[#7C9B4A] transition-colors">
+                    </div>
+                    <button type="submit" 
+                            class="bg-[#7C9B4A] text-[#F5F1E3] rounded-md p-2 hover:bg-[#8DAC5A] transition-all font-semibold shadow-md">
+                        Iniciar Sesión
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>  
+</main>
